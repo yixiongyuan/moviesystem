@@ -14,16 +14,7 @@ Using spring mvc framwork to implement a simple movie data manage system, follow
 
 Development Environment:
 
-- **Spring 5**
-
-- **Maven 4**
-
-- **Tomcat 9**
-
-- **MySQL 8**
-
-- **JDK 17**
-
+- **IDEA, JDK 17, Spring 5, MySQL 8, Tomcat 9, Maven 4**
 
 
 
