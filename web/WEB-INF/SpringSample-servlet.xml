@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+   http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd
+   http://www.springframework.org/schema/mvc
+   http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+    <!-- how to access the static resource mapping to target directory -->
+    <mvc:annotation-driven />
+    <mvc:resources mapping="/assets/**" location="/static/assets/" />
+    <mvc:resources mapping="/js/**" location="/static/js/" />
+    <mvc:resources mapping="/css/**" location="/static/css/"/>
+    <mvc:resources mapping="/cover/**" location="/upload/CoverData/"/>
+<!--    <mvc:resources mapping="/filepath/**" location="file:///E:/review_txt/"/>-->
+
+    <!-- Adding Support for Component Scan -->
+    <context:component-scan base-package="controller" />
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="UTF-8"></property>
+
+        <property name="maxUploadSize" value="104857600"></property>
+    </bean>
+
+    <!-- Configure View Resolver -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/view/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+</beans>
