@@ -2,7 +2,7 @@
 
 ## project website
 This project is an individual practice of java web development. 
-Using spring mvc framwork to implement a simple movie data manage system, following are main function descriptions:**
+Using spring mvc framwork to implement a simple movie data manage system, following are main function descriptions:
 
 - **List all movie items in database on pages**
 - **Insert a new movie item into database**
