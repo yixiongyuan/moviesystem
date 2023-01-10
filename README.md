@@ -1,6 +1,6 @@
 # Movie Review System
 
-## project website
+## project website : http://54.85.215.89:8080/MovieSystem/
 This project is an individual practice of java web development. 
 Using spring mvc framwork to implement a simple movie data manage system, following are main function descriptions:
 
