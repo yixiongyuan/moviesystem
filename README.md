@@ -18,3 +18,12 @@ Development Environment:
 
 
 
+Website Layout Display:
+
+![image](https://github.com/yixiongyuan/moviesystem/blob/master/web/static/assets/index.png)
+
+
+![image](https://github.com/yixiongyuan/moviesystem/blob/master/web/static/assets/main.png)
+
+
+
